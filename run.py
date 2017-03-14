@@ -194,6 +194,9 @@ if __name__ == "__main__":
   if "relativeEntropy" in args.detectors:
     from nab.detectors.relative_entropy.relative_entropy_detector import (
       RelativeEntropyDetector)
+  if "lstm" in args.detectors:
+    from nab.detectors.lstm.lstm_detector import (
+      LstmDetector)
 
   # To run expose detector, you must have sklearn version 0.16.1 installed.
   # Higher versions of sklearn may not be compatible with numpy version 1.9.2
